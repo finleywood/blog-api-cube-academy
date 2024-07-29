@@ -19,6 +19,80 @@ A simple blog API built with Laravel for the Cube Academy PHP technical task.
 - `POST /api/login` - Login
 - `POST /api/register` - Register
 
+## Request Payloads
+- Create a new blog
+```
+{
+    "title": "",
+    "content": ""
+}
+```
+- Update a blog
+```
+{
+    "title": "",
+    "content": ""
+}
+```
+- Login
+```
+{
+    "email": "",
+    "password": ""
+}
+```
+- Register
+```
+{
+    "name": "",
+    "email": "",
+    "password": "",
+    "c_password": ""
+}
+```
+
+## Response Payloads
+- Get all blogs
+```
+[
+    {
+        "id": 1,
+        "title": "",
+        "content": "",
+        "created_at": "",
+        "updated_at": ""
+    }
+]
+```
+- Get a single blog
+```
+{
+    "id": 1,
+    "title": "",
+    "content": "",
+    "created_at": "",
+    "updated_at": ""
+}
+```
+- Login
+```
+{
+    "token": ""
+}
+```
+- Register
+```
+{
+    "name": "",
+    "email": "",
+    "updated_at": "",
+    "created_at": ""
+}
+```
+
+## Swagger
+The API documentation is available at `/api/documentation`
+
 ## Authentication
 To authenticate, send a POST request to `/api/login` with the following payload:
 ```
