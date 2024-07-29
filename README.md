@@ -101,7 +101,7 @@ To authenticate, send a POST request to `/api/login` with the following payload:
     "password": ""
 }
 ```
-The API will return a token which should be included in the headers of all requests that require authentication.
+A token will be returned. All authenticated routes should receive this token in the request's Authorization Bearer header. `Accept: 'application/json'` must also be present in the request headers when making a call to the api.
 
 ## Testing
 To run the tests, run `php artisan test`
